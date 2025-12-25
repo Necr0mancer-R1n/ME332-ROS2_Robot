@@ -1,0 +1,72 @@
+[0.008s] Invoking command in '/home/liang/me332_ws/build/gazebo_grasp_plugin': AMENT_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble LD_LIBRARY_PATH=/home/liang/me332_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/liang/me332_ws/build/gazebo_grasp_plugin -- -j20 -l20
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target gazebo_grasp_msgs[0m
+[0.054s] [ 50%] Built target gazebo_grasp_msgs
+[0.068s] [35m[1mConsolidate compiler generated dependencies of target gazebo_grasp_fix[0m
+[0.099s] [100%] Built target gazebo_grasp_fix
+[0.107s] Invoked command in '/home/liang/me332_ws/build/gazebo_grasp_plugin' returned '0': AMENT_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble LD_LIBRARY_PATH=/home/liang/me332_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/liang/me332_ws/build/gazebo_grasp_plugin -- -j20 -l20
+[0.108s] Invoking command in '/home/liang/me332_ws/build/gazebo_grasp_plugin': AMENT_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble LD_LIBRARY_PATH=/home/liang/me332_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/liang/me332_ws/build/gazebo_grasp_plugin
+[0.113s] -- Install configuration: ""
+[0.113s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so
+[0.113s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/lib/libgazebo_grasp_msgs.so
+[0.113s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include
+[0.113s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin
+[0.113s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h
+[0.113s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h
+[0.113s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin
+[0.113s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles
+[0.113s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/CMakeTmp
+[0.113s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_plugin_uninstall.dir
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/uninstall.dir
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/3.22.1
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/3.22.1/CompilerIdCXX
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/3.22.1/CompilerIdCXX/tmp
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/3.22.1/CompilerIdC
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/3.22.1/CompilerIdC/tmp
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_msgs.dir
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_package_templates
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_export_dependencies
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_export_libraries
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_uninstall_target
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/grasp_event.pb.h
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_export_include_directories
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index/share
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index/share/ament_index
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index/share/ament_index/resource_index
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index/share/ament_index/resource_index/packages
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_environment_hooks
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/.cmake
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/.cmake/api
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/.cmake/api/v1
+[0.114s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/.cmake/api/v1/reply
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/.cmake/api/v1/query
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/.cmake/api/v1/query/client-colcon-cmake
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_core
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_core/stamps
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/msgs
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/msgs/grasp_event.pb.h
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/library_path.sh
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/library_path.dsv
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/ament_index/resource_index/package_run_dependencies/gazebo_grasp_plugin
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/ament_index/resource_index/parent_prefix_path/gazebo_grasp_plugin
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/ament_prefix_path.sh
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/ament_prefix_path.dsv
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/path.sh
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/path.dsv
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/local_setup.bash
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/local_setup.sh
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/local_setup.zsh
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/local_setup.dsv
+[0.115s] -- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.dsv
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/ament_index/resource_index/packages/gazebo_grasp_plugin
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/ament_cmake_export_libraries-extras.cmake
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/gazebo_grasp_pluginConfig.cmake
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/gazebo_grasp_pluginConfig-version.cmake
+[0.115s] -- Up-to-date: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.xml
+[0.116s] Invoked command in '/home/liang/me332_ws/build/gazebo_grasp_plugin' returned '0': AMENT_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble LD_LIBRARY_PATH=/home/liang/me332_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/liang/me332_ws/build/gazebo_grasp_plugin
