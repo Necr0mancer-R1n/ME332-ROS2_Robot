@@ -1,6 +1,0 @@
-Invoking command in '/home/liang/me332_ws/build/gazebo_version_helpers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_version_helpers -DCMAKE_INSTALL_PREFIX=/home/liang/me332_ws/install/gazebo_version_helpers
-Invoked command in '/home/liang/me332_ws/build/gazebo_version_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_version_helpers -DCMAKE_INSTALL_PREFIX=/home/liang/me332_ws/install/gazebo_version_helpers
-Invoking command in '/home/liang/me332_ws/build/gazebo_version_helpers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/liang/me332_ws/build/gazebo_version_helpers -- -j20 -l20
-Invoked command in '/home/liang/me332_ws/build/gazebo_version_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/liang/me332_ws/build/gazebo_version_helpers -- -j20 -l20
-Invoking command in '/home/liang/me332_ws/build/gazebo_version_helpers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/liang/me332_ws/build/gazebo_version_helpers
-Invoked command in '/home/liang/me332_ws/build/gazebo_version_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/liang/me332_ws/build/gazebo_version_helpers

@@ -1,3 +1,0 @@
-source;share/gazebo_version_helpers/environment/ament_prefix_path.sh
-source;share/gazebo_version_helpers/environment/library_path.sh
-source;share/gazebo_version_helpers/environment/path.sh

@@ -1,6 +1,0 @@
-Invoking command in '/home/liang/me332_ws/build/me332_robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/liang/me332_ws/src/me332_robot_description -DCMAKE_INSTALL_PREFIX=/home/liang/me332_ws/install/me332_robot_description
-Invoked command in '/home/liang/me332_ws/build/me332_robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/liang/me332_ws/src/me332_robot_description -DCMAKE_INSTALL_PREFIX=/home/liang/me332_ws/install/me332_robot_description
-Invoking command in '/home/liang/me332_ws/build/me332_robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/liang/me332_ws/build/me332_robot_description -- -j20 -l20
-Invoked command in '/home/liang/me332_ws/build/me332_robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/liang/me332_ws/build/me332_robot_description -- -j20 -l20
-Invoking command in '/home/liang/me332_ws/build/me332_robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/liang/me332_ws/build/me332_robot_description
-Invoked command in '/home/liang/me332_ws/build/me332_robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/liang/me332_ws/build/me332_robot_description
