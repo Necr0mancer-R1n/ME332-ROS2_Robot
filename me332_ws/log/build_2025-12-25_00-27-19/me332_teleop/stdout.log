@@ -1,0 +1,64 @@
+running egg_info
+creating ../../build/me332_teleop/me332_teleop.egg-info
+writing ../../build/me332_teleop/me332_teleop.egg-info/PKG-INFO
+writing dependency_links to ../../build/me332_teleop/me332_teleop.egg-info/dependency_links.txt
+writing entry points to ../../build/me332_teleop/me332_teleop.egg-info/entry_points.txt
+writing requirements to ../../build/me332_teleop/me332_teleop.egg-info/requires.txt
+writing top-level names to ../../build/me332_teleop/me332_teleop.egg-info/top_level.txt
+writing manifest file '../../build/me332_teleop/me332_teleop.egg-info/SOURCES.txt'
+reading manifest file '../../build/me332_teleop/me332_teleop.egg-info/SOURCES.txt'
+writing manifest file '../../build/me332_teleop/me332_teleop.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/liang/me332_ws/build/me332_teleop/build
+creating /home/liang/me332_ws/build/me332_teleop/build/lib
+creating /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop
+copying me332_teleop/__init__.py -> /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop
+copying me332_teleop/teleop_voice.py -> /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop
+copying me332_teleop/teleop_keyboard.py -> /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop
+copying me332_teleop/teleop_gesture.py -> /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop
+running install
+running install_lib
+creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop
+copying /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop/__init__.py -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop
+copying /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop/teleop_voice.py -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop
+copying /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop/teleop_keyboard.py -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop
+copying /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop/teleop_gesture.py -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop
+byte-compiling /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/teleop_voice.py to teleop_voice.cpython-310.pyc
+byte-compiling /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/teleop_keyboard.py to teleop_keyboard.cpython-310.pyc
+byte-compiling /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/teleop_gesture.py to teleop_gesture.cpython-310.pyc
+running install_data
+creating /home/liang/me332_ws/install/me332_teleop/share/ament_index
+creating /home/liang/me332_ws/install/me332_teleop/share/ament_index/resource_index
+creating /home/liang/me332_ws/install/me332_teleop/share/ament_index/resource_index/packages
+copying resource/me332_teleop -> /home/liang/me332_ws/install/me332_teleop/share/ament_index/resource_index/packages
+copying package.xml -> /home/liang/me332_ws/install/me332_teleop/share/me332_teleop
+copying me332_teleop/hand_landmarker.task -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop
+creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model
+copying me332_teleop/model/README -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/.
+creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector
+copying me332_teleop/model/ivector/final.ie -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector
+copying me332_teleop/model/ivector/global_cmvn.stats -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector
+copying me332_teleop/model/ivector/final.dubm -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector
+copying me332_teleop/model/ivector/splice.conf -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector
+copying me332_teleop/model/ivector/online_cmvn.conf -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector
+copying me332_teleop/model/ivector/final.mat -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector
+creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/am
+copying me332_teleop/model/am/final.mdl -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/am
+creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/graph
+copying me332_teleop/model/graph/disambig_tid.int -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/graph
+copying me332_teleop/model/graph/HCLr.fst -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/graph
+copying me332_teleop/model/graph/Gr.fst -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/graph
+creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/graph/phones
+copying me332_teleop/model/graph/phones/word_boundary.int -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/graph/phones
+creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/conf
+copying me332_teleop/model/conf/model.conf -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/conf
+copying me332_teleop/model/conf/mfcc.conf -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/conf
+running install_egg_info
+Copying ../../build/me332_teleop/me332_teleop.egg-info to /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop-0.0.0-py3.10.egg-info
+running install_scripts
+Installing teleop_gesture script to /home/liang/me332_ws/install/me332_teleop/lib/me332_teleop
+Installing teleop_keyboard script to /home/liang/me332_ws/install/me332_teleop/lib/me332_teleop
+Installing teleop_voice script to /home/liang/me332_ws/install/me332_teleop/lib/me332_teleop
+writing list of installed files to '/home/liang/me332_ws/build/me332_teleop/install.log'

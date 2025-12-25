@@ -1,0 +1,410 @@
+[0.068s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.068s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x72c80606b400>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72c80606af50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72c80606af50>>, mixin_verb=('build',))
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.173s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/liang/me332_ws'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extension 'ros'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extensions ['cmake', 'python']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extension 'cmake'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extension 'python'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extensions ['python_setup_py']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble) by extension 'python_setup_py'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin) by extension 'ros'
+[0.185s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gazebo-pkgs-humble/gazebo_grasp_plugin' with type 'ros.ament_cmake' and name 'gazebo_grasp_plugin'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros) by extension 'ros'
+[0.185s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros' with type 'ros.ament_cmake' and name 'gazebo_grasp_plugin_ros'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_version_helpers) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_version_helpers) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_version_helpers) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_version_helpers) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_version_helpers) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_version_helpers) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_version_helpers) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_version_helpers) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo-pkgs-humble/gazebo_version_helpers) by extension 'ros'
+[0.186s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gazebo-pkgs-humble/gazebo_version_helpers' with type 'ros.ament_cmake' and name 'gazebo_version_helpers'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_robot_description) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_robot_description) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_robot_description) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_robot_description) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_robot_description) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_robot_description) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_robot_description) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_robot_description) by extension 'ros'
+[0.192s] DEBUG:colcon.colcon_core.package_identification:Package 'src/me332_robot_description' with type 'ros.ament_cmake' and name 'me332_robot_description'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_teleop) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_teleop) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_teleop) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_teleop) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_teleop) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_teleop) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_teleop) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/me332_teleop) by extension 'ros'
+[0.193s] DEBUG:colcon.colcon_core.package_identification:Package 'src/me332_teleop' with type 'ros.ament_python' and name 'me332_teleop'
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.206s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.206s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.208s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 455 installed packages in /opt/ros/humble
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'gazebo_version_helpers' build argument 'cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'gazebo_version_helpers' build argument 'cmake_target' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'gazebo_version_helpers' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'gazebo_version_helpers' build argument 'cmake_clean_cache' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'gazebo_version_helpers' build argument 'cmake_clean_first' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'gazebo_version_helpers' build argument 'cmake_force_configure' from command line to 'False'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'gazebo_version_helpers' build argument 'ament_cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'gazebo_version_helpers' build argument 'catkin_cmake_args' from command line to 'None'
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'gazebo_version_helpers' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.241s] DEBUG:colcon.colcon_core.verb:Building package 'gazebo_version_helpers' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/liang/me332_ws/build/gazebo_version_helpers', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/liang/me332_ws/install/gazebo_version_helpers', 'merge_install': False, 'path': '/home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_version_helpers', 'symlink_install': False, 'test_result_base': None}
+[0.241s] Level 5:colcon.colcon_core.verb:set package 'me332_robot_description' build argument 'cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'me332_robot_description' build argument 'cmake_target' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'me332_robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'me332_robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'me332_robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'me332_robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'me332_robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'me332_robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'me332_robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.267s] DEBUG:colcon.colcon_core.verb:Building package 'me332_robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/liang/me332_ws/build/me332_robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/liang/me332_ws/install/me332_robot_description', 'merge_install': False, 'path': '/home/liang/me332_ws/src/me332_robot_description', 'symlink_install': False, 'test_result_base': None}
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'me332_teleop' build argument 'cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'me332_teleop' build argument 'cmake_target' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'me332_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'me332_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'me332_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'me332_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'me332_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'me332_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'me332_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.268s] DEBUG:colcon.colcon_core.verb:Building package 'me332_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/liang/me332_ws/build/me332_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/liang/me332_ws/install/me332_teleop', 'merge_install': False, 'path': '/home/liang/me332_ws/src/me332_teleop', 'symlink_install': False, 'test_result_base': None}
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin' build argument 'cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin' build argument 'cmake_target' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin' build argument 'cmake_clean_cache' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin' build argument 'cmake_clean_first' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin' build argument 'cmake_force_configure' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin' build argument 'ament_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin' build argument 'catkin_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.268s] DEBUG:colcon.colcon_core.verb:Building package 'gazebo_grasp_plugin' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/liang/me332_ws/build/gazebo_grasp_plugin', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/liang/me332_ws/install/gazebo_grasp_plugin', 'merge_install': False, 'path': '/home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_grasp_plugin', 'symlink_install': False, 'test_result_base': None}
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin_ros' build argument 'cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin_ros' build argument 'cmake_target' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'gazebo_grasp_plugin_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'gazebo_grasp_plugin_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/liang/me332_ws/build/gazebo_grasp_plugin_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros', 'merge_install': False, 'path': '/home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros', 'symlink_install': False, 'test_result_base': None}
+[0.269s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.271s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.271s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_version_helpers' with build type 'ament_cmake'
+[0.271s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_version_helpers'
+[0.273s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.273s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.274s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.277s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/liang/me332_ws/src/me332_robot_description' with build type 'ament_cmake'
+[0.277s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/liang/me332_ws/src/me332_robot_description'
+[0.277s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.277s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.279s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/liang/me332_ws/src/me332_teleop' with build type 'ament_python'
+[0.279s] Level 1:colcon.colcon_core.shell:create_environment_hook('me332_teleop', 'ament_prefix_path')
+[0.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/me332_teleop/share/me332_teleop/hook/ament_prefix_path.ps1'
+[0.280s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/me332_teleop/share/me332_teleop/hook/ament_prefix_path.dsv'
+[0.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/me332_teleop/share/me332_teleop/hook/ament_prefix_path.sh'
+[0.280s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.280s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.285s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/liang/me332_ws/build/gazebo_version_helpers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/liang/me332_ws/build/gazebo_version_helpers -- -j20 -l20
+[0.287s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/liang/me332_ws/build/me332_robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/liang/me332_ws/build/me332_robot_description -- -j20 -l20
+[0.452s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/liang/me332_ws/src/me332_teleop'
+[0.452s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.452s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/liang/me332_ws/build/gazebo_version_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/liang/me332_ws/build/gazebo_version_helpers -- -j20 -l20
+[0.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/liang/me332_ws/build/gazebo_version_helpers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/liang/me332_ws/build/gazebo_version_helpers
+[0.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/liang/me332_ws/build/me332_robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/liang/me332_ws/build/me332_robot_description -- -j20 -l20
+[0.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/liang/me332_ws/build/me332_robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/liang/me332_ws/build/me332_robot_description
+[0.473s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(me332_robot_description)
+[0.474s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/liang/me332_ws/build/me332_robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/liang/me332_ws/build/me332_robot_description
+[0.475s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_robot_description' for CMake module files
+[0.476s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_robot_description' for CMake config files
+[0.476s] Level 1:colcon.colcon_core.shell:create_environment_hook('me332_robot_description', 'cmake_prefix_path')
+[0.476s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/hook/cmake_prefix_path.ps1'
+[0.476s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/hook/cmake_prefix_path.dsv'
+[0.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/hook/cmake_prefix_path.sh'
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_robot_description/bin'
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_robot_description/lib/pkgconfig/me332_robot_description.pc'
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_robot_description/lib/python3.10/site-packages'
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_robot_description/bin'
+[0.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/package.ps1'
+[0.478s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/package.dsv'
+[0.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/package.sh'
+[0.479s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/package.bash'
+[0.479s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/package.zsh'
+[0.480s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/liang/me332_ws/install/me332_robot_description/share/colcon-core/packages/me332_robot_description)
+[0.480s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(me332_robot_description)
+[0.480s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_robot_description' for CMake module files
+[0.481s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_robot_description' for CMake config files
+[0.481s] Level 1:colcon.colcon_core.shell:create_environment_hook('me332_robot_description', 'cmake_prefix_path')
+[0.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/hook/cmake_prefix_path.ps1'
+[0.481s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/hook/cmake_prefix_path.dsv'
+[0.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/hook/cmake_prefix_path.sh'
+[0.482s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_robot_description/bin'
+[0.482s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_robot_description/lib/pkgconfig/me332_robot_description.pc'
+[0.482s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_robot_description/lib/python3.10/site-packages'
+[0.482s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_robot_description/bin'
+[0.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/package.ps1'
+[0.482s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/package.dsv'
+[0.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/package.sh'
+[0.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/package.bash'
+[0.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/package.zsh'
+[0.483s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/liang/me332_ws/install/me332_robot_description/share/colcon-core/packages/me332_robot_description)
+[0.484s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_version_helpers)
+[0.484s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers' for CMake module files
+[0.484s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers' for CMake config files
+[0.485s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/liang/me332_ws/build/gazebo_version_helpers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/liang/me332_ws/build/gazebo_version_helpers
+[0.485s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_version_helpers', 'cmake_prefix_path')
+[0.485s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/hook/cmake_prefix_path.ps1'
+[0.485s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/hook/cmake_prefix_path.dsv'
+[0.485s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/hook/cmake_prefix_path.sh'
+[0.486s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers/lib'
+[0.486s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_version_helpers', 'ld_library_path_lib')
+[0.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/hook/ld_library_path_lib.ps1'
+[0.486s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/hook/ld_library_path_lib.dsv'
+[0.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/hook/ld_library_path_lib.sh'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers/bin'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers/lib/pkgconfig/gazebo_version_helpers.pc'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers/lib/python3.10/site-packages'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers/bin'
+[0.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.ps1'
+[0.487s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.dsv'
+[0.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.sh'
+[0.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.bash'
+[0.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.zsh'
+[0.488s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/liang/me332_ws/install/gazebo_version_helpers/share/colcon-core/packages/gazebo_version_helpers)
+[0.489s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_version_helpers)
+[0.489s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers' for CMake module files
+[0.489s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers' for CMake config files
+[0.489s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_version_helpers', 'cmake_prefix_path')
+[0.489s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/hook/cmake_prefix_path.ps1'
+[0.489s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/hook/cmake_prefix_path.dsv'
+[0.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/hook/cmake_prefix_path.sh'
+[0.490s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers/lib'
+[0.490s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_version_helpers', 'ld_library_path_lib')
+[0.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/hook/ld_library_path_lib.ps1'
+[0.490s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/hook/ld_library_path_lib.dsv'
+[0.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/hook/ld_library_path_lib.sh'
+[0.491s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers/bin'
+[0.491s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers/lib/pkgconfig/gazebo_version_helpers.pc'
+[0.491s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers/lib/python3.10/site-packages'
+[0.491s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_version_helpers/bin'
+[0.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.ps1'
+[0.491s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.dsv'
+[0.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.sh'
+[0.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.bash'
+[0.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.zsh'
+[0.492s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/liang/me332_ws/install/gazebo_version_helpers/share/colcon-core/packages/gazebo_version_helpers)
+[0.493s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_grasp_plugin' with build type 'ament_cmake'
+[0.493s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_grasp_plugin'
+[0.493s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.493s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.502s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/liang/me332_ws/build/gazebo_grasp_plugin': AMENT_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble LD_LIBRARY_PATH=/home/liang/me332_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/liang/me332_ws/build/gazebo_grasp_plugin -- -j20 -l20
+[0.596s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/liang/me332_ws/build/gazebo_grasp_plugin' returned '0': AMENT_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble LD_LIBRARY_PATH=/home/liang/me332_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/liang/me332_ws/build/gazebo_grasp_plugin -- -j20 -l20
+[0.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/liang/me332_ws/build/gazebo_grasp_plugin': AMENT_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble LD_LIBRARY_PATH=/home/liang/me332_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/liang/me332_ws/build/gazebo_grasp_plugin
+[0.609s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_grasp_plugin)
+[0.610s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin' for CMake module files
+[0.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/liang/me332_ws/build/gazebo_grasp_plugin' returned '0': AMENT_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble LD_LIBRARY_PATH=/home/liang/me332_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/liang/me332_ws/build/gazebo_grasp_plugin
+[0.610s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin' for CMake config files
+[0.611s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_grasp_plugin', 'cmake_prefix_path')
+[0.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/hook/cmake_prefix_path.ps1'
+[0.611s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/hook/cmake_prefix_path.dsv'
+[0.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/hook/cmake_prefix_path.sh'
+[0.612s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin/lib'
+[0.612s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_grasp_plugin', 'ld_library_path_lib')
+[0.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/hook/ld_library_path_lib.ps1'
+[0.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/hook/ld_library_path_lib.dsv'
+[0.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/hook/ld_library_path_lib.sh'
+[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin/bin'
+[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin/lib/pkgconfig/gazebo_grasp_plugin.pc'
+[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin/lib/python3.10/site-packages'
+[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin/bin'
+[0.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.ps1'
+[0.614s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.dsv'
+[0.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.sh'
+[0.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.bash'
+[0.615s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.zsh'
+[0.615s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/liang/me332_ws/install/gazebo_grasp_plugin/share/colcon-core/packages/gazebo_grasp_plugin)
+[0.615s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_grasp_plugin)
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin' for CMake module files
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin' for CMake config files
+[0.615s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_grasp_plugin', 'cmake_prefix_path')
+[0.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/hook/cmake_prefix_path.ps1'
+[0.616s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/hook/cmake_prefix_path.dsv'
+[0.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/hook/cmake_prefix_path.sh'
+[0.616s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin/lib'
+[0.616s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_grasp_plugin', 'ld_library_path_lib')
+[0.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/hook/ld_library_path_lib.ps1'
+[0.617s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/hook/ld_library_path_lib.dsv'
+[0.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/hook/ld_library_path_lib.sh'
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin/bin'
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin/lib/pkgconfig/gazebo_grasp_plugin.pc'
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin/lib/python3.10/site-packages'
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin/bin'
+[0.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.ps1'
+[0.618s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.dsv'
+[0.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.sh'
+[0.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.bash'
+[0.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.zsh'
+[0.619s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/liang/me332_ws/install/gazebo_grasp_plugin/share/colcon-core/packages/gazebo_grasp_plugin)
+[0.619s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros' with build type 'ament_cmake'
+[0.619s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros'
+[0.619s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.619s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.630s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/liang/me332_ws/build/gazebo_grasp_plugin_ros': AMENT_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble LD_LIBRARY_PATH=/home/liang/me332_ws/install/gazebo_grasp_plugin/lib:/home/liang/me332_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/liang/me332_ws/build/gazebo_grasp_plugin_ros -- -j20 -l20
+[0.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/liang/me332_ws/src/me332_teleop': PYTHONPATH=/home/liang/me332_ws/build/me332_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/me332_teleop build --build-base /home/liang/me332_ws/build/me332_teleop/build install --record /home/liang/me332_ws/build/me332_teleop/install.log --single-version-externally-managed install_data
+[0.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/liang/me332_ws/build/gazebo_grasp_plugin_ros' returned '0': AMENT_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble LD_LIBRARY_PATH=/home/liang/me332_ws/install/gazebo_grasp_plugin/lib:/home/liang/me332_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/liang/me332_ws/build/gazebo_grasp_plugin_ros -- -j20 -l20
+[0.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/liang/me332_ws/build/gazebo_grasp_plugin_ros': AMENT_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble LD_LIBRARY_PATH=/home/liang/me332_ws/install/gazebo_grasp_plugin/lib:/home/liang/me332_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/liang/me332_ws/build/gazebo_grasp_plugin_ros
+[0.709s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_grasp_plugin_ros)
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros' for CMake module files
+[0.709s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/liang/me332_ws/build/gazebo_grasp_plugin_ros' returned '0': AMENT_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble LD_LIBRARY_PATH=/home/liang/me332_ws/install/gazebo_grasp_plugin/lib:/home/liang/me332_ws/install/gazebo_version_helpers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/liang/me332_ws/build/gazebo_grasp_plugin_ros
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros' for CMake config files
+[0.709s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_grasp_plugin_ros', 'cmake_prefix_path')
+[0.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/hook/cmake_prefix_path.ps1'
+[0.710s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/hook/cmake_prefix_path.dsv'
+[0.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/hook/cmake_prefix_path.sh'
+[0.710s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/lib'
+[0.710s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/bin'
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/lib/pkgconfig/gazebo_grasp_plugin_ros.pc'
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/lib/python3.10/site-packages'
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/bin'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/package.ps1'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/package.dsv'
+[0.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/package.sh'
+[0.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/package.bash'
+[0.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/package.zsh'
+[0.712s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/colcon-core/packages/gazebo_grasp_plugin_ros)
+[0.713s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_grasp_plugin_ros)
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros' for CMake module files
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros' for CMake config files
+[0.713s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_grasp_plugin_ros', 'cmake_prefix_path')
+[0.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/hook/cmake_prefix_path.ps1'
+[0.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/hook/cmake_prefix_path.dsv'
+[0.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/hook/cmake_prefix_path.sh'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/lib'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/bin'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/lib/pkgconfig/gazebo_grasp_plugin_ros.pc'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/lib/python3.10/site-packages'
+[0.715s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/bin'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/package.ps1'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/package.dsv'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/package.sh'
+[0.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/package.bash'
+[0.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/package.zsh'
+[0.716s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/colcon-core/packages/gazebo_grasp_plugin_ros)
+[0.881s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_teleop' for CMake module files
+[0.881s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/liang/me332_ws/src/me332_teleop' returned '0': PYTHONPATH=/home/liang/me332_ws/build/me332_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/me332_teleop build --build-base /home/liang/me332_ws/build/me332_teleop/build install --record /home/liang/me332_ws/build/me332_teleop/install.log --single-version-externally-managed install_data
+[0.881s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_teleop' for CMake config files
+[0.882s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_teleop/lib'
+[0.882s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_teleop/bin'
+[0.882s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_teleop/lib/pkgconfig/me332_teleop.pc'
+[0.882s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages'
+[0.882s] Level 1:colcon.colcon_core.shell:create_environment_hook('me332_teleop', 'pythonpath')
+[0.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/me332_teleop/share/me332_teleop/hook/pythonpath.ps1'
+[0.882s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/liang/me332_ws/install/me332_teleop/share/me332_teleop/hook/pythonpath.dsv'
+[0.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/liang/me332_ws/install/me332_teleop/share/me332_teleop/hook/pythonpath.sh'
+[0.883s] Level 1:colcon.colcon_core.environment:checking '/home/liang/me332_ws/install/me332_teleop/bin'
+[0.883s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(me332_teleop)
+[0.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/me332_teleop/share/me332_teleop/package.ps1'
+[0.884s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/liang/me332_ws/install/me332_teleop/share/me332_teleop/package.dsv'
+[0.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/me332_teleop/share/me332_teleop/package.sh'
+[0.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/me332_teleop/share/me332_teleop/package.bash'
+[0.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/liang/me332_ws/install/me332_teleop/share/me332_teleop/package.zsh'
+[0.885s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/liang/me332_ws/install/me332_teleop/share/colcon-core/packages/me332_teleop)
+[0.885s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.885s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.885s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.885s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.889s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.889s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.889s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.897s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.897s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/liang/me332_ws/install/local_setup.ps1'
+[0.898s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/liang/me332_ws/install/_local_setup_util_ps1.py'
+[0.898s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/liang/me332_ws/install/setup.ps1'
+[0.899s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/liang/me332_ws/install/local_setup.sh'
+[0.899s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/liang/me332_ws/install/_local_setup_util_sh.py'
+[0.900s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/liang/me332_ws/install/setup.sh'
+[0.900s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/liang/me332_ws/install/local_setup.bash'
+[0.901s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/liang/me332_ws/install/setup.bash'
+[0.901s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/liang/me332_ws/install/local_setup.zsh'
+[0.902s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/liang/me332_ws/install/setup.zsh'

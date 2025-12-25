@@ -1,0 +1,5 @@
+[console_scripts]
+teleop_gesture = me332_teleop.teleop_gesture:main
+teleop_keyboard = me332_teleop.teleop_keyboard:main
+teleop_voice = me332_teleop.teleop_voice:main
+

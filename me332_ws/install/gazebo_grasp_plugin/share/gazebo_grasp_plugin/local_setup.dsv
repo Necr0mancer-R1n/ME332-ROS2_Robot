@@ -1,0 +1,3 @@
+source;share/gazebo_grasp_plugin/environment/ament_prefix_path.sh
+source;share/gazebo_grasp_plugin/environment/library_path.sh
+source;share/gazebo_grasp_plugin/environment/path.sh

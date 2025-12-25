@@ -1,0 +1,918 @@
+[0.000000] (-) TimerEvent: {}
+[0.000463] (gazebo_version_helpers) JobQueued: {'identifier': 'gazebo_version_helpers', 'dependencies': OrderedDict()}
+[0.000781] (me332_robot_description) JobQueued: {'identifier': 'me332_robot_description', 'dependencies': OrderedDict()}
+[0.000924] (me332_teleop) JobQueued: {'identifier': 'me332_teleop', 'dependencies': OrderedDict()}
+[0.000948] (gazebo_grasp_plugin) JobQueued: {'identifier': 'gazebo_grasp_plugin', 'dependencies': OrderedDict([('gazebo_version_helpers', '/home/liang/me332_ws/install/gazebo_version_helpers')])}
+[0.000974] (gazebo_grasp_plugin_ros) JobQueued: {'identifier': 'gazebo_grasp_plugin_ros', 'dependencies': OrderedDict([('gazebo_version_helpers', '/home/liang/me332_ws/install/gazebo_version_helpers'), ('gazebo_grasp_plugin', '/home/liang/me332_ws/install/gazebo_grasp_plugin')])}
+[0.001001] (gazebo_version_helpers) JobStarted: {'identifier': 'gazebo_version_helpers'}
+[0.004703] (me332_robot_description) JobStarted: {'identifier': 'me332_robot_description'}
+[0.006746] (me332_teleop) JobStarted: {'identifier': 'me332_teleop'}
+[0.010288] (gazebo_version_helpers) JobProgress: {'identifier': 'gazebo_version_helpers', 'progress': 'cmake'}
+[0.010482] (gazebo_version_helpers) Command: {'cmd': ['/usr/bin/cmake', '/home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_version_helpers', '-DCMAKE_INSTALL_PREFIX=/home/liang/me332_ws/install/gazebo_version_helpers'], 'cwd': '/home/liang/me332_ws/build/gazebo_version_helpers', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'liang'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/liang'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'liang'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'liang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/liang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubun:@/tmp/.ICE-unix/1735,unix/Ubun:/tmp/.ICE-unix/1735'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9ee5529_8ea4_4195_b6d4_e9fd5e5e3a85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.651'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/liang/me332_ws/build/gazebo_version_helpers'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/liang/.local/share/Trash/files/build.15/gazebo_grasp_plugin/libgazebo_grasp_fix.so\n/home/liang/.local/share/Trash/files/install.15/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.011983] (me332_robot_description) JobProgress: {'identifier': 'me332_robot_description', 'progress': 'cmake'}
+[0.012261] (me332_robot_description) Command: {'cmd': ['/usr/bin/cmake', '/home/liang/me332_ws/src/me332_robot_description', '-DCMAKE_INSTALL_PREFIX=/home/liang/me332_ws/install/me332_robot_description'], 'cwd': '/home/liang/me332_ws/build/me332_robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'liang'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/liang'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'liang'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'liang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/liang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubun:@/tmp/.ICE-unix/1735,unix/Ubun:/tmp/.ICE-unix/1735'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9ee5529_8ea4_4195_b6d4_e9fd5e5e3a85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.651'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/liang/me332_ws/build/me332_robot_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/liang/.local/share/Trash/files/build.15/gazebo_grasp_plugin/libgazebo_grasp_fix.so\n/home/liang/.local/share/Trash/files/install.15/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.059621] (gazebo_version_helpers) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.059988] (me332_robot_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.098467] (gazebo_version_helpers) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.099966] (-) TimerEvent: {}
+[0.101566] (me332_robot_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.104039] (gazebo_version_helpers) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.107086] (me332_robot_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.163472] (gazebo_version_helpers) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.167413] (me332_robot_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.168324] (gazebo_version_helpers) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.168470] (gazebo_version_helpers) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.168723] (gazebo_version_helpers) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.170978] (gazebo_version_helpers) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.175977] (me332_robot_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.176159] (me332_robot_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.176617] (me332_robot_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.179887] (me332_robot_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200069] (-) TimerEvent: {}
+[0.241402] (gazebo_version_helpers) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.241892] (me332_robot_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.246569] (gazebo_version_helpers) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.246721] (gazebo_version_helpers) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.247060] (gazebo_version_helpers) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.248814] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.250900] (me332_robot_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.251100] (me332_robot_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.251446] (me332_robot_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.252993] (me332_robot_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300181] (-) TimerEvent: {}
+[0.358717] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.366526] (me332_robot_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400281] (-) TimerEvent: {}
+[0.406671] (me332_teleop) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/me332_teleop', 'build', '--build-base', '/home/liang/me332_ws/build/me332_teleop/build', 'install', '--record', '/home/liang/me332_ws/build/me332_teleop/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/liang/me332_ws/src/me332_teleop', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'HTTPS_PROXY': 'http://127.0.0.1:7890/', 'no_proxy': 'localhost,127.0.0.0/8,::1', 'USER': 'liang', 'LC_TIME': 'zh_CN.UTF-8', 'all_proxy': 'socks://127.0.0.1:7890/', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/liang', 'DESKTOP_SESSION': 'ubuntu-xorg', 'NO_PROXY': 'localhost,127.0.0.0/8,::1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'zh_CN.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1735', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382', 'COLORTERM': 'truecolor', 'QT_QPA_PLATFORMTHEME': 'qt5ct', 'IM_CONFIG_PHASE': '1', 'https_proxy': 'http://127.0.0.1:7890/', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'liang', 'ALL_PROXY': 'socks://127.0.0.1:7890/', 'http_proxy': 'http://127.0.0.1:7890/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'liang', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/liang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/Ubun:@/tmp/.ICE-unix/1735,unix/Ubun:/tmp/.ICE-unix/1735', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a9ee5529_8ea4_4195_b6d4_e9fd5e5e3a85', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.651', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'GAZEBO_MODEL_DATABASE_URI': '', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/liang/me332_ws/build/me332_teleop', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'GAZEBO_PLUGIN_PATH': ':/home/liang/.local/share/Trash/files/build.15/gazebo_grasp_plugin/libgazebo_grasp_fix.so\n/home/liang/.local/share/Trash/files/install.15/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so', 'CLUTTER_IM_MODULE': 'fcitx', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/liang/me332_ws/build/me332_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'HTTP_PROXY': 'http://127.0.0.1:7890/', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.422964] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.9.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)\n'}
+[0.424030] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.452978] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.456251] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.461849] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.469805] (gazebo_version_helpers) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.473634] (me332_robot_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.474988] (me332_robot_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.475900] (me332_robot_description) StdoutLine: {'line': b'-- Build files have been written to: /home/liang/me332_ws/build/me332_robot_description\n'}
+[0.478578] (me332_robot_description) CommandEnded: {'returncode': 0}
+[0.479549] (me332_robot_description) JobProgress: {'identifier': 'me332_robot_description', 'progress': 'build'}
+[0.479918] (me332_robot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/liang/me332_ws/build/me332_robot_description', '--', '-j20', '-l20'], 'cwd': '/home/liang/me332_ws/build/me332_robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'liang'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/liang'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'liang'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'liang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/liang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubun:@/tmp/.ICE-unix/1735,unix/Ubun:/tmp/.ICE-unix/1735'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9ee5529_8ea4_4195_b6d4_e9fd5e5e3a85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.651'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/liang/me332_ws/build/me332_robot_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/liang/.local/share/Trash/files/build.15/gazebo_grasp_plugin/libgazebo_grasp_fix.so\n/home/liang/.local/share/Trash/files/install.15/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.480723] (gazebo_version_helpers) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500478] (-) TimerEvent: {}
+[0.509488] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.511134] (me332_robot_description) CommandEnded: {'returncode': 0}
+[0.512206] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.512284] (me332_robot_description) JobProgress: {'identifier': 'me332_robot_description', 'progress': 'install'}
+[0.518367] (me332_robot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/liang/me332_ws/build/me332_robot_description'], 'cwd': '/home/liang/me332_ws/build/me332_robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'liang'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/liang'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'liang'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'liang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/liang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubun:@/tmp/.ICE-unix/1735,unix/Ubun:/tmp/.ICE-unix/1735'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9ee5529_8ea4_4195_b6d4_e9fd5e5e3a85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.651'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/liang/me332_ws/build/me332_robot_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/liang/.local/share/Trash/files/build.15/gazebo_grasp_plugin/libgazebo_grasp_fix.so\n/home/liang/.local/share/Trash/files/install.15/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.525492] (me332_robot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.525595] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/urdf\n'}
+[0.525634] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/urdf/robot.xacro\n'}
+[0.525666] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/launch\n'}
+[0.525702] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/launch/navigation.launch.py\n'}
+[0.525832] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/launch/mapping.launch.py\n'}
+[0.525907] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/launch/gazebo_robot.launch.py\n'}
+[0.525946] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/config\n'}
+[0.526014] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/config/me332_mm_controllers.yaml\n'}
+[0.526045] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/config/nav2_params.yaml\n'}
+[0.526075] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/scripts\n'}
+[0.526130] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/scripts/nav2_rviz_config.rviz\n'}
+[0.526158] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/scripts/cleanup_gazebo.sh\n'}
+[0.526184] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/worlds\n'}
+[0.526224] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/worlds/me332_final_project_6_0_classic.world\n'}
+[0.526251] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/worlds/me332_world.world\n'}
+[0.526291] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/maps\n'}
+[0.526324] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/maps/me332_final_project_6_0_classic.pgm\n'}
+[0.526354] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/maps/me332_final_project_6_0_classic.yaml\n'}
+[0.526396] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/maps/me332_world.yaml\n'}
+[0.526446] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/maps/me332_world.pgm\n'}
+[0.526473] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/ament_index/resource_index/package_run_dependencies/me332_robot_description\n'}
+[0.526514] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/ament_index/resource_index/parent_prefix_path/me332_robot_description\n'}
+[0.526553] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/environment/ament_prefix_path.sh\n'}
+[0.526578] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/environment/ament_prefix_path.dsv\n'}
+[0.526619] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/environment/path.sh\n'}
+[0.526659] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/environment/path.dsv\n'}
+[0.526685] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/local_setup.bash\n'}
+[0.526736] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/local_setup.sh\n'}
+[0.526766] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/local_setup.zsh\n'}
+[0.526807] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/local_setup.dsv\n'}
+[0.526847] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/package.dsv\n'}
+[0.526884] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/ament_index/resource_index/packages/me332_robot_description\n'}
+[0.526924] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/cmake/me332_robot_descriptionConfig.cmake\n'}
+[0.526950] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/cmake/me332_robot_descriptionConfig-version.cmake\n'}
+[0.526991] (me332_robot_description) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/me332_robot_description/share/me332_robot_description/package.xml\n'}
+[0.528347] (me332_robot_description) CommandEnded: {'returncode': 0}
+[0.537375] (me332_robot_description) JobEnded: {'identifier': 'me332_robot_description', 'rc': 0}
+[0.564593] (me332_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[0.564897] (me332_teleop) StdoutLine: {'line': b'creating ../../build/me332_teleop/me332_teleop.egg-info\n'}
+[0.565107] (me332_teleop) StdoutLine: {'line': b'writing ../../build/me332_teleop/me332_teleop.egg-info/PKG-INFO\n'}
+[0.565209] (me332_teleop) StdoutLine: {'line': b'writing dependency_links to ../../build/me332_teleop/me332_teleop.egg-info/dependency_links.txt\n'}
+[0.565318] (me332_teleop) StdoutLine: {'line': b'writing entry points to ../../build/me332_teleop/me332_teleop.egg-info/entry_points.txt\n'}
+[0.565398] (me332_teleop) StdoutLine: {'line': b'writing requirements to ../../build/me332_teleop/me332_teleop.egg-info/requires.txt\n'}
+[0.565471] (me332_teleop) StdoutLine: {'line': b'writing top-level names to ../../build/me332_teleop/me332_teleop.egg-info/top_level.txt\n'}
+[0.565544] (me332_teleop) StdoutLine: {'line': b"writing manifest file '../../build/me332_teleop/me332_teleop.egg-info/SOURCES.txt'\n"}
+[0.566375] (me332_teleop) StdoutLine: {'line': b"reading manifest file '../../build/me332_teleop/me332_teleop.egg-info/SOURCES.txt'\n"}
+[0.566788] (me332_teleop) StdoutLine: {'line': b"writing manifest file '../../build/me332_teleop/me332_teleop.egg-info/SOURCES.txt'\n"}
+[0.566894] (me332_teleop) StdoutLine: {'line': b'running build\n'}
+[0.566970] (me332_teleop) StdoutLine: {'line': b'running build_py\n'}
+[0.567068] (me332_teleop) StdoutLine: {'line': b'creating /home/liang/me332_ws/build/me332_teleop/build\n'}
+[0.567145] (me332_teleop) StdoutLine: {'line': b'creating /home/liang/me332_ws/build/me332_teleop/build/lib\n'}
+[0.567221] (me332_teleop) StdoutLine: {'line': b'creating /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop\n'}
+[0.567295] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/__init__.py -> /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop\n'}
+[0.567409] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/teleop_voice.py -> /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop\n'}
+[0.567510] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/teleop_keyboard.py -> /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop\n'}
+[0.567584] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/teleop_gesture.py -> /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop\n'}
+[0.567659] (me332_teleop) StdoutLine: {'line': b'running install\n'}
+[0.567758] (me332_teleop) StdoutLine: {'line': b'running install_lib\n'}
+[0.568017] (me332_teleop) StdoutLine: {'line': b'creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop\n'}
+[0.568128] (me332_teleop) StdoutLine: {'line': b'copying /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop/__init__.py -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop\n'}
+[0.568217] (me332_teleop) StdoutLine: {'line': b'copying /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop/teleop_voice.py -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop\n'}
+[0.568330] (me332_teleop) StdoutLine: {'line': b'copying /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop/teleop_keyboard.py -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop\n'}
+[0.568413] (me332_teleop) StdoutLine: {'line': b'copying /home/liang/me332_ws/build/me332_teleop/build/lib/me332_teleop/teleop_gesture.py -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop\n'}
+[0.568511] (me332_teleop) StdoutLine: {'line': b'byte-compiling /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/__init__.py to __init__.cpython-310.pyc\n'}
+[0.568615] (me332_teleop) StdoutLine: {'line': b'byte-compiling /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/teleop_voice.py to teleop_voice.cpython-310.pyc\n'}
+[0.570195] (me332_teleop) StdoutLine: {'line': b'byte-compiling /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/teleop_keyboard.py to teleop_keyboard.cpython-310.pyc\n'}
+[0.571412] (me332_teleop) StdoutLine: {'line': b'byte-compiling /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/teleop_gesture.py to teleop_gesture.cpython-310.pyc\n'}
+[0.572331] (me332_teleop) StdoutLine: {'line': b'running install_data\n'}
+[0.572450] (me332_teleop) StdoutLine: {'line': b'creating /home/liang/me332_ws/install/me332_teleop/share/ament_index\n'}
+[0.572525] (me332_teleop) StdoutLine: {'line': b'creating /home/liang/me332_ws/install/me332_teleop/share/ament_index/resource_index\n'}
+[0.572598] (me332_teleop) StdoutLine: {'line': b'creating /home/liang/me332_ws/install/me332_teleop/share/ament_index/resource_index/packages\n'}
+[0.572668] (me332_teleop) StdoutLine: {'line': b'copying resource/me332_teleop -> /home/liang/me332_ws/install/me332_teleop/share/ament_index/resource_index/packages\n'}
+[0.572789] (me332_teleop) StdoutLine: {'line': b'copying package.xml -> /home/liang/me332_ws/install/me332_teleop/share/me332_teleop\n'}
+[0.572863] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/hand_landmarker.task -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop\n'}
+[0.575841] (me332_teleop) StdoutLine: {'line': b'creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model\n'}
+[0.575959] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/README -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/.\n'}
+[0.576029] (me332_teleop) StdoutLine: {'line': b'creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector\n'}
+[0.576096] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/ivector/final.ie -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector\n'}
+[0.579190] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.580285] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/ivector/global_cmvn.stats -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector\n'}
+[0.580504] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/ivector/final.dubm -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector\n'}
+[0.580637] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/ivector/splice.conf -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector\n'}
+[0.580734] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/ivector/online_cmvn.conf -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector\n'}
+[0.580819] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/ivector/final.mat -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/ivector\n'}
+[0.580901] (me332_teleop) StdoutLine: {'line': b'creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/am\n'}
+[0.580982] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/am/final.mdl -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/am\n'}
+[0.587581] (me332_teleop) StdoutLine: {'line': b'creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/graph\n'}
+[0.587758] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/graph/disambig_tid.int -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/graph\n'}
+[0.587850] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/graph/HCLr.fst -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/graph\n'}
+[0.594888] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/graph/Gr.fst -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/graph\n'}
+[0.599276] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.600590] (-) TimerEvent: {}
+[0.606113] (me332_teleop) StdoutLine: {'line': b'creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/graph/phones\n'}
+[0.606290] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/graph/phones/word_boundary.int -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/graph/phones\n'}
+[0.606372] (me332_teleop) StdoutLine: {'line': b'creating /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/conf\n'}
+[0.606446] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/conf/model.conf -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/conf\n'}
+[0.606530] (me332_teleop) StdoutLine: {'line': b'copying me332_teleop/model/conf/mfcc.conf -> /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop/model/conf\n'}
+[0.606601] (me332_teleop) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.607708] (me332_teleop) StdoutLine: {'line': b'Copying ../../build/me332_teleop/me332_teleop.egg-info to /home/liang/me332_ws/install/me332_teleop/lib/python3.10/site-packages/me332_teleop-0.0.0-py3.10.egg-info\n'}
+[0.608082] (me332_teleop) StdoutLine: {'line': b'running install_scripts\n'}
+[0.621541] (me332_teleop) StdoutLine: {'line': b'Installing teleop_gesture script to /home/liang/me332_ws/install/me332_teleop/lib/me332_teleop\n'}
+[0.621692] (me332_teleop) StdoutLine: {'line': b'Installing teleop_keyboard script to /home/liang/me332_ws/install/me332_teleop/lib/me332_teleop\n'}
+[0.621803] (me332_teleop) StdoutLine: {'line': b'Installing teleop_voice script to /home/liang/me332_ws/install/me332_teleop/lib/me332_teleop\n'}
+[0.621880] (me332_teleop) StdoutLine: {'line': b"writing list of installed files to '/home/liang/me332_ws/build/me332_teleop/install.log'\n"}
+[0.629004] (gazebo_version_helpers) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.634953] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.637426] (me332_teleop) CommandEnded: {'returncode': 0}
+[0.641295] (me332_teleop) JobEnded: {'identifier': 'me332_teleop', 'rc': 0}
+[0.695078] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.695350] (gazebo_version_helpers) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.700751] (-) TimerEvent: {}
+[0.756990] (gazebo_version_helpers) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.758336] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.798849] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[0.800047] (gazebo_version_helpers) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[0.800847] (-) TimerEvent: {}
+[0.812722] (gazebo_version_helpers) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[0.900954] (-) TimerEvent: {}
+[0.901969] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[0.948051] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[0.962886] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[0.986330] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[0.996960] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.000208] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.001012] (-) TimerEvent: {}
+[1.004453] (gazebo_version_helpers) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.006368] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.006657] (gazebo_version_helpers) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[1.011880] (gazebo_version_helpers) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[1.022976] (gazebo_version_helpers) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[1.050561] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.055092] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.062316] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.065805] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.065938] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.069010] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.069208] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.072331] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.072504] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.075810] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.075986] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.079059] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.079241] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.082549] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.101255] (-) TimerEvent: {}
+[1.152948] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.154429] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.154617] (gazebo_version_helpers) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.167723] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.175479] (gazebo_version_helpers) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.180193] (gazebo_version_helpers) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.192556] (gazebo_version_helpers) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.201354] (-) TimerEvent: {}
+[1.226502] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.231648] (gazebo_version_helpers) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.243195] (gazebo_version_helpers) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.273328] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.276048] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.276644] (gazebo_version_helpers) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[1.291106] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.296046] (gazebo_version_helpers) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.301601] (-) TimerEvent: {}
+[1.307783] (gazebo_version_helpers) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[1.340596] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.342102] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.342805] (gazebo_version_helpers) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[1.342880] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.343673] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.344635] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[1.353261] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[1.353508] (gazebo_version_helpers) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[1.355003] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[1.355489] (gazebo_version_helpers) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[1.355572] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.357522] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[1.357617] (gazebo_version_helpers) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[1.401818] (-) TimerEvent: {}
+[1.425503] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[1.431434] (gazebo_version_helpers) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.443138] (gazebo_version_helpers) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.473320] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[1.478302] (gazebo_version_helpers) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.489958] (gazebo_version_helpers) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.501907] (-) TimerEvent: {}
+[1.520689] (gazebo_version_helpers) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.521219] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.521472] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.521671] (gazebo_version_helpers) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.575815] (gazebo_version_helpers) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.581056] (gazebo_version_helpers) StdoutLine: {'line': b'-- Generating done\n'}
+[1.583614] (gazebo_version_helpers) StdoutLine: {'line': b'-- Build files have been written to: /home/liang/me332_ws/build/gazebo_version_helpers\n'}
+[1.592419] (gazebo_version_helpers) CommandEnded: {'returncode': 0}
+[1.593233] (gazebo_version_helpers) JobProgress: {'identifier': 'gazebo_version_helpers', 'progress': 'build'}
+[1.593254] (gazebo_version_helpers) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/liang/me332_ws/build/gazebo_version_helpers', '--', '-j20', '-l20'], 'cwd': '/home/liang/me332_ws/build/gazebo_version_helpers', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'liang'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/liang'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'liang'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'liang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/liang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubun:@/tmp/.ICE-unix/1735,unix/Ubun:/tmp/.ICE-unix/1735'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9ee5529_8ea4_4195_b6d4_e9fd5e5e3a85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.651'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/liang/me332_ws/build/gazebo_version_helpers'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/liang/.local/share/Trash/files/build.15/gazebo_grasp_plugin/libgazebo_grasp_fix.so\n/home/liang/.local/share/Trash/files/install.15/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.601979] (-) TimerEvent: {}
+[1.633975] (gazebo_version_helpers) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/gazebo_version_helpers.dir/src/GazeboVersionHelpers.cpp.o\x1b[0m\n'}
+[1.702095] (-) TimerEvent: {}
+[1.802364] (-) TimerEvent: {}
+[1.902719] (-) TimerEvent: {}
+[2.002942] (-) TimerEvent: {}
+[2.103188] (-) TimerEvent: {}
+[2.203523] (-) TimerEvent: {}
+[2.303861] (-) TimerEvent: {}
+[2.404125] (-) TimerEvent: {}
+[2.504457] (-) TimerEvent: {}
+[2.604823] (-) TimerEvent: {}
+[2.705053] (-) TimerEvent: {}
+[2.805312] (-) TimerEvent: {}
+[2.905633] (-) TimerEvent: {}
+[3.005854] (-) TimerEvent: {}
+[3.106079] (-) TimerEvent: {}
+[3.206414] (-) TimerEvent: {}
+[3.306754] (-) TimerEvent: {}
+[3.406983] (-) TimerEvent: {}
+[3.507252] (-) TimerEvent: {}
+[3.607590] (-) TimerEvent: {}
+[3.707862] (-) TimerEvent: {}
+[3.808083] (-) TimerEvent: {}
+[3.908407] (-) TimerEvent: {}
+[4.008745] (-) TimerEvent: {}
+[4.108970] (-) TimerEvent: {}
+[4.209233] (-) TimerEvent: {}
+[4.309569] (-) TimerEvent: {}
+[4.409881] (-) TimerEvent: {}
+[4.510106] (-) TimerEvent: {}
+[4.610438] (-) TimerEvent: {}
+[4.710767] (-) TimerEvent: {}
+[4.810990] (-) TimerEvent: {}
+[4.911245] (-) TimerEvent: {}
+[5.011569] (-) TimerEvent: {}
+[5.111874] (-) TimerEvent: {}
+[5.212096] (-) TimerEvent: {}
+[5.312437] (-) TimerEvent: {}
+[5.412772] (-) TimerEvent: {}
+[5.513012] (-) TimerEvent: {}
+[5.613278] (-) TimerEvent: {}
+[5.713618] (-) TimerEvent: {}
+[5.813867] (-) TimerEvent: {}
+[5.914209] (-) TimerEvent: {}
+[6.014552] (-) TimerEvent: {}
+[6.114886] (-) TimerEvent: {}
+[6.215115] (-) TimerEvent: {}
+[6.315442] (-) TimerEvent: {}
+[6.415771] (-) TimerEvent: {}
+[6.515994] (-) TimerEvent: {}
+[6.616342] (-) TimerEvent: {}
+[6.716686] (-) TimerEvent: {}
+[6.817054] (-) TimerEvent: {}
+[6.917304] (-) TimerEvent: {}
+[7.017632] (-) TimerEvent: {}
+[7.117865] (-) TimerEvent: {}
+[7.218094] (-) TimerEvent: {}
+[7.318419] (-) TimerEvent: {}
+[7.418753] (-) TimerEvent: {}
+[7.519086] (-) TimerEvent: {}
+[7.619426] (-) TimerEvent: {}
+[7.719778] (-) TimerEvent: {}
+[7.820054] (-) TimerEvent: {}
+[7.920332] (-) TimerEvent: {}
+[8.020661] (-) TimerEvent: {}
+[8.120890] (-) TimerEvent: {}
+[8.221108] (-) TimerEvent: {}
+[8.321424] (-) TimerEvent: {}
+[8.421751] (-) TimerEvent: {}
+[8.521966] (-) TimerEvent: {}
+[8.622231] (-) TimerEvent: {}
+[8.722487] (-) TimerEvent: {}
+[8.794232] (gazebo_version_helpers) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libgazebo_version_helpers.so\x1b[0m\n'}
+[8.822680] (-) TimerEvent: {}
+[8.903384] (gazebo_version_helpers) StdoutLine: {'line': b'[100%] Built target gazebo_version_helpers\n'}
+[8.911467] (gazebo_version_helpers) CommandEnded: {'returncode': 0}
+[8.912253] (gazebo_version_helpers) JobProgress: {'identifier': 'gazebo_version_helpers', 'progress': 'install'}
+[8.912787] (gazebo_version_helpers) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/liang/me332_ws/build/gazebo_version_helpers'], 'cwd': '/home/liang/me332_ws/build/gazebo_version_helpers', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'liang'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/liang'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'liang'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'liang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/liang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubun:@/tmp/.ICE-unix/1735,unix/Ubun:/tmp/.ICE-unix/1735'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9ee5529_8ea4_4195_b6d4_e9fd5e5e3a85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.651'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/liang/me332_ws/build/gazebo_version_helpers'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/liang/.local/share/Trash/files/build.15/gazebo_grasp_plugin/libgazebo_grasp_fix.so\n/home/liang/.local/share/Trash/files/install.15/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.918821] (gazebo_version_helpers) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.918881] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/lib/libgazebo_version_helpers.so\n'}
+[8.919783] (gazebo_version_helpers) StdoutLine: {'line': b'-- Set runtime path of "/home/liang/me332_ws/install/gazebo_version_helpers/lib/libgazebo_version_helpers.so" to ""\n'}
+[8.919816] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/include\n'}
+[8.919849] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/include/gazebo_version_helpers\n'}
+[8.919878] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/include/gazebo_version_helpers/GazeboVersionHelpers.h\n'}
+[8.919908] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/environment/library_path.sh\n'}
+[8.920047] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/environment/library_path.dsv\n'}
+[8.920083] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/ament_index/resource_index/package_run_dependencies/gazebo_version_helpers\n'}
+[8.920160] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/ament_index/resource_index/parent_prefix_path/gazebo_version_helpers\n'}
+[8.920193] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/environment/ament_prefix_path.sh\n'}
+[8.920222] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/environment/ament_prefix_path.dsv\n'}
+[8.920277] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/environment/path.sh\n'}
+[8.920307] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/environment/path.dsv\n'}
+[8.920337] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/local_setup.bash\n'}
+[8.920390] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/local_setup.sh\n'}
+[8.920420] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/local_setup.zsh\n'}
+[8.920450] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/local_setup.dsv\n'}
+[8.920479] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.dsv\n'}
+[8.920522] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/ament_index/resource_index/packages/gazebo_version_helpers\n'}
+[8.920552] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.920597] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.920625] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.920660] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/cmake/gazebo_version_helpersConfig.cmake\n'}
+[8.920704] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/cmake/gazebo_version_helpersConfig-version.cmake\n'}
+[8.920743] (gazebo_version_helpers) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/package.xml\n'}
+[8.922128] (gazebo_version_helpers) CommandEnded: {'returncode': 0}
+[8.922799] (-) TimerEvent: {}
+[8.932759] (gazebo_version_helpers) JobEnded: {'identifier': 'gazebo_version_helpers', 'rc': 0}
+[8.933111] (gazebo_grasp_plugin) JobStarted: {'identifier': 'gazebo_grasp_plugin'}
+[8.939085] (gazebo_grasp_plugin) JobProgress: {'identifier': 'gazebo_grasp_plugin', 'progress': 'cmake'}
+[8.939664] (gazebo_grasp_plugin) Command: {'cmd': ['/usr/bin/cmake', '/home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_grasp_plugin', '-DCMAKE_INSTALL_PREFIX=/home/liang/me332_ws/install/gazebo_grasp_plugin'], 'cwd': '/home/liang/me332_ws/build/gazebo_grasp_plugin', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'liang'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/liang/me332_ws/install/gazebo_version_helpers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/liang'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'liang'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'liang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/liang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubun:@/tmp/.ICE-unix/1735,unix/Ubun:/tmp/.ICE-unix/1735'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9ee5529_8ea4_4195_b6d4_e9fd5e5e3a85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.651'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/liang/me332_ws/build/gazebo_grasp_plugin'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/liang/.local/share/Trash/files/build.15/gazebo_grasp_plugin/libgazebo_grasp_fix.so\n/home/liang/.local/share/Trash/files/install.15/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble')]), 'shell': False}
+[8.986001] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[9.022905] (-) TimerEvent: {}
+[9.025810] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[9.030998] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[9.088284] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[9.093385] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[9.093469] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[9.093652] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[9.095811] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[9.122999] (-) TimerEvent: {}
+[9.160433] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[9.169158] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[9.170460] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[9.170537] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[9.172972] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[9.223202] (-) TimerEvent: {}
+[9.299439] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[9.323409] (-) TimerEvent: {}
+[9.370637] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)\n'}
+[9.375528] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[9.381332] (gazebo_grasp_plugin) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[9.392856] (gazebo_grasp_plugin) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[9.423600] (-) TimerEvent: {}
+[9.477081] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[9.520904] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[9.523800] (-) TimerEvent: {}
+[9.532565] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[9.624041] (-) TimerEvent: {}
+[9.673640] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[9.687086] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[9.693432] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[9.698167] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[9.699134] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[9.699342] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[9.703093] (gazebo_grasp_plugin) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[9.714075] (gazebo_grasp_plugin) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[9.724158] (-) TimerEvent: {}
+[9.742863] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[9.750036] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[9.757038] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[9.760638] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[9.760721] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[9.763865] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[9.763944] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[9.766993] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[9.767071] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[9.770527] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[9.770607] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[9.774189] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[9.774264] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[9.778017] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[9.824350] (-) TimerEvent: {}
+[9.849164] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[9.850626] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[9.850932] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[9.863502] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[9.870930] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[9.875665] (gazebo_grasp_plugin) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[9.887716] (gazebo_grasp_plugin) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[9.919502] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[9.923929] (gazebo_grasp_plugin) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[9.924418] (-) TimerEvent: {}
+[9.934427] (gazebo_grasp_plugin) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[9.962749] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[9.964244] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[9.964456] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[9.980680] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[9.984103] (gazebo_grasp_plugin) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[9.995823] (gazebo_grasp_plugin) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[10.024620] (-) TimerEvent: {}
+[10.024909] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[10.026233] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[10.026440] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[10.026548] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[10.027181] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[10.028215] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[10.036404] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[10.036574] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[10.038137] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[10.038339] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[10.038494] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[10.041478] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[10.041660] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[10.109198] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[10.116078] (gazebo_grasp_plugin) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[10.124733] (-) TimerEvent: {}
+[10.128145] (gazebo_grasp_plugin) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[10.157118] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[10.163064] (gazebo_grasp_plugin) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[10.174257] (gazebo_grasp_plugin) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[10.203381] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[10.203604] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[10.203946] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[10.204220] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[10.206907] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[10.207103] (gazebo_grasp_plugin) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[10.217524] (gazebo_grasp_plugin) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[10.224796] (-) TimerEvent: {}
+[10.249106] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[10.276759] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[10.280298] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[10.286251] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[10.295234] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.307540] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.324895] (-) TimerEvent: {}
+[10.337602] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[10.340495] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[10.413847] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[10.424997] (-) TimerEvent: {}
+[10.432541] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[10.466231] (gazebo_grasp_plugin) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[10.472607] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[10.507027] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[10.515584] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found gazebo_version_helpers: 0.0.0 (/home/liang/me332_ws/install/gazebo_version_helpers/share/gazebo_version_helpers/cmake)\n'}
+[10.524999] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[10.525189] (-) TimerEvent: {}
+[10.575251] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.590033] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Generating done\n'}
+[10.593555] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Build files have been written to: /home/liang/me332_ws/build/gazebo_grasp_plugin\n'}
+[10.602515] (gazebo_grasp_plugin) CommandEnded: {'returncode': 0}
+[10.603219] (gazebo_grasp_plugin) JobProgress: {'identifier': 'gazebo_grasp_plugin', 'progress': 'build'}
+[10.603559] (gazebo_grasp_plugin) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/liang/me332_ws/build/gazebo_grasp_plugin', '--', '-j20', '-l20'], 'cwd': '/home/liang/me332_ws/build/gazebo_grasp_plugin', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'liang'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/liang/me332_ws/install/gazebo_version_helpers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/liang'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'liang'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'liang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/liang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubun:@/tmp/.ICE-unix/1735,unix/Ubun:/tmp/.ICE-unix/1735'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9ee5529_8ea4_4195_b6d4_e9fd5e5e3a85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.651'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/liang/me332_ws/build/gazebo_grasp_plugin'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/liang/.local/share/Trash/files/build.15/gazebo_grasp_plugin/libgazebo_grasp_fix.so\n/home/liang/.local/share/Trash/files/install.15/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble')]), 'shell': False}
+[10.625403] (-) TimerEvent: {}
+[10.639481] (gazebo_grasp_plugin) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mRunning cpp protocol buffer compiler on msgs/grasp_event.proto\x1b[0m\n'}
+[10.663785] (gazebo_grasp_plugin) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/gazebo_grasp_msgs.dir/grasp_event.pb.cc.o\x1b[0m\n'}
+[10.725653] (-) TimerEvent: {}
+[10.825971] (-) TimerEvent: {}
+[10.926247] (-) TimerEvent: {}
+[11.026513] (-) TimerEvent: {}
+[11.126858] (-) TimerEvent: {}
+[11.148526] (gazebo_grasp_plugin) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libgazebo_grasp_msgs.so\x1b[0m\n'}
+[11.208676] (gazebo_grasp_plugin) StdoutLine: {'line': b'\x1b[34m\x1b[1mMoving protobuf headers to msgs directory\x1b[0m\n'}
+[11.226945] (-) TimerEvent: {}
+[11.227153] (gazebo_grasp_plugin) StdoutLine: {'line': b'[ 50%] Built target gazebo_grasp_msgs\n'}
+[11.243199] (gazebo_grasp_plugin) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.o\x1b[0m\n'}
+[11.244879] (gazebo_grasp_plugin) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.o\x1b[0m\n'}
+[11.327151] (-) TimerEvent: {}
+[11.427491] (-) TimerEvent: {}
+[11.527866] (-) TimerEvent: {}
+[11.628212] (-) TimerEvent: {}
+[11.728550] (-) TimerEvent: {}
+[11.828885] (-) TimerEvent: {}
+[11.929243] (-) TimerEvent: {}
+[12.029597] (-) TimerEvent: {}
+[12.129860] (-) TimerEvent: {}
+[12.230110] (-) TimerEvent: {}
+[12.330385] (-) TimerEvent: {}
+[12.430737] (-) TimerEvent: {}
+[12.530975] (-) TimerEvent: {}
+[12.631265] (-) TimerEvent: {}
+[12.731615] (-) TimerEvent: {}
+[12.831910] (-) TimerEvent: {}
+[12.932161] (-) TimerEvent: {}
+[13.032501] (-) TimerEvent: {}
+[13.132858] (-) TimerEvent: {}
+[13.233104] (-) TimerEvent: {}
+[13.333381] (-) TimerEvent: {}
+[13.433745] (-) TimerEvent: {}
+[13.534097] (-) TimerEvent: {}
+[13.634461] (-) TimerEvent: {}
+[13.734817] (-) TimerEvent: {}
+[13.835060] (-) TimerEvent: {}
+[13.935322] (-) TimerEvent: {}
+[14.035710] (-) TimerEvent: {}
+[14.135941] (-) TimerEvent: {}
+[14.236193] (-) TimerEvent: {}
+[14.336516] (-) TimerEvent: {}
+[14.436849] (-) TimerEvent: {}
+[14.537079] (-) TimerEvent: {}
+[14.637418] (-) TimerEvent: {}
+[14.737773] (-) TimerEvent: {}
+[14.838009] (-) TimerEvent: {}
+[14.938272] (-) TimerEvent: {}
+[15.038533] (-) TimerEvent: {}
+[15.138877] (-) TimerEvent: {}
+[15.239111] (-) TimerEvent: {}
+[15.339446] (-) TimerEvent: {}
+[15.439817] (-) TimerEvent: {}
+[15.540168] (-) TimerEvent: {}
+[15.640520] (-) TimerEvent: {}
+[15.740875] (-) TimerEvent: {}
+[15.841108] (-) TimerEvent: {}
+[15.941336] (-) TimerEvent: {}
+[16.041666] (-) TimerEvent: {}
+[16.142006] (-) TimerEvent: {}
+[16.242344] (-) TimerEvent: {}
+[16.342691] (-) TimerEvent: {}
+[16.443051] (-) TimerEvent: {}
+[16.543327] (-) TimerEvent: {}
+[16.643683] (-) TimerEvent: {}
+[16.743935] (-) TimerEvent: {}
+[16.844223] (-) TimerEvent: {}
+[16.944570] (-) TimerEvent: {}
+[17.044937] (-) TimerEvent: {}
+[17.145229] (-) TimerEvent: {}
+[17.245574] (-) TimerEvent: {}
+[17.345881] (-) TimerEvent: {}
+[17.446234] (-) TimerEvent: {}
+[17.546577] (-) TimerEvent: {}
+[17.646924] (-) TimerEvent: {}
+[17.747288] (-) TimerEvent: {}
+[17.847639] (-) TimerEvent: {}
+[17.947886] (-) TimerEvent: {}
+[18.048226] (-) TimerEvent: {}
+[18.148569] (-) TimerEvent: {}
+[18.248934] (-) TimerEvent: {}
+[18.349272] (-) TimerEvent: {}
+[18.449607] (-) TimerEvent: {}
+[18.549868] (-) TimerEvent: {}
+[18.650207] (-) TimerEvent: {}
+[18.750558] (-) TimerEvent: {}
+[18.850915] (-) TimerEvent: {}
+[18.951162] (-) TimerEvent: {}
+[19.051498] (-) TimerEvent: {}
+[19.151844] (-) TimerEvent: {}
+[19.252075] (-) TimerEvent: {}
+[19.352446] (-) TimerEvent: {}
+[19.452823] (-) TimerEvent: {}
+[19.553069] (-) TimerEvent: {}
+[19.653392] (-) TimerEvent: {}
+[19.753721] (-) TimerEvent: {}
+[19.854061] (-) TimerEvent: {}
+[19.954326] (-) TimerEvent: {}
+[20.054665] (-) TimerEvent: {}
+[20.154899] (-) TimerEvent: {}
+[20.255144] (-) TimerEvent: {}
+[20.355477] (-) TimerEvent: {}
+[20.455711] (-) TimerEvent: {}
+[20.555936] (-) TimerEvent: {}
+[20.656270] (-) TimerEvent: {}
+[20.756509] (-) TimerEvent: {}
+[20.827905] (gazebo_grasp_plugin) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libgazebo_grasp_fix.so\x1b[0m\n'}
+[20.856709] (-) TimerEvent: {}
+[20.957064] (-) TimerEvent: {}
+[21.057401] (-) TimerEvent: {}
+[21.157635] (-) TimerEvent: {}
+[21.201999] (gazebo_grasp_plugin) StdoutLine: {'line': b'[100%] Built target gazebo_grasp_fix\n'}
+[21.209522] (gazebo_grasp_plugin) CommandEnded: {'returncode': 0}
+[21.210060] (gazebo_grasp_plugin) JobProgress: {'identifier': 'gazebo_grasp_plugin', 'progress': 'install'}
+[21.210411] (gazebo_grasp_plugin) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/liang/me332_ws/build/gazebo_grasp_plugin'], 'cwd': '/home/liang/me332_ws/build/gazebo_grasp_plugin', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'liang'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/liang/me332_ws/install/gazebo_version_helpers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/liang'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'liang'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'liang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/liang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubun:@/tmp/.ICE-unix/1735,unix/Ubun:/tmp/.ICE-unix/1735'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9ee5529_8ea4_4195_b6d4_e9fd5e5e3a85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.651'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/liang/me332_ws/build/gazebo_grasp_plugin'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/liang/.local/share/Trash/files/build.15/gazebo_grasp_plugin/libgazebo_grasp_fix.so\n/home/liang/.local/share/Trash/files/install.15/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble')]), 'shell': False}
+[21.218246] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.218354] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so\n'}
+[21.220233] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Set runtime path of "/home/liang/me332_ws/install/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so" to ""\n'}
+[21.220388] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/lib/libgazebo_grasp_msgs.so\n'}
+[21.220469] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include\n'}
+[21.220542] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin\n'}
+[21.220612] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h\n'}
+[21.220682] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h\n'}
+[21.220892] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin\n'}
+[21.221006] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles\n'}
+[21.221084] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/CMakeTmp\n'}
+[21.221157] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_plugin_uninstall.dir\n'}
+[21.221227] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir\n'}
+[21.221296] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src\n'}
+[21.221406] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/uninstall.dir\n'}
+[21.221490] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/3.22.1\n'}
+[21.221560] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/3.22.1/CompilerIdCXX\n'}
+[21.221630] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/3.22.1/CompilerIdCXX/tmp\n'}
+[21.221724] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/3.22.1/CompilerIdC\n'}
+[21.221816] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/3.22.1/CompilerIdC/tmp\n'}
+[21.221886] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_msgs.dir\n'}
+[21.221954] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_package_templates\n'}
+[21.222022] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_export_dependencies\n'}
+[21.222091] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_export_libraries\n'}
+[21.222158] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_uninstall_target\n'}
+[21.222226] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/grasp_event.pb.h\n'}
+[21.222296] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_export_include_directories\n'}
+[21.222365] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index\n'}
+[21.222435] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index/share\n'}
+[21.222504] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index/share/ament_index\n'}
+[21.222572] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index/share/ament_index/resource_index\n'}
+[21.222641] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index/share/ament_index/resource_index/packages\n'}
+[21.222744] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies\n'}
+[21.222860] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path\n'}
+[21.222906] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_environment_hooks\n'}
+[21.222940] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/.cmake\n'}
+[21.222974] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/.cmake/api\n'}
+[21.223006] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/.cmake/api/v1\n'}
+[21.223037] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/.cmake/api/v1/reply\n'}
+[21.223070] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/.cmake/api/v1/query\n'}
+[21.223099] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/.cmake/api/v1/query/client-colcon-cmake\n'}
+[21.223130] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_core\n'}
+[21.223160] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/ament_cmake_core/stamps\n'}
+[21.223197] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/msgs\n'}
+[21.223229] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/include/gazebo_grasp_plugin/gazebo_grasp_plugin/msgs/grasp_event.pb.h\n'}
+[21.223262] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/library_path.sh\n'}
+[21.223292] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/library_path.dsv\n'}
+[21.223327] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/ament_index/resource_index/package_run_dependencies/gazebo_grasp_plugin\n'}
+[21.223359] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/ament_index/resource_index/parent_prefix_path/gazebo_grasp_plugin\n'}
+[21.223390] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/ament_prefix_path.sh\n'}
+[21.223423] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/ament_prefix_path.dsv\n'}
+[21.223455] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/path.sh\n'}
+[21.223486] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/environment/path.dsv\n'}
+[21.223519] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/local_setup.bash\n'}
+[21.223551] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/local_setup.sh\n'}
+[21.223582] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/local_setup.zsh\n'}
+[21.223615] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/local_setup.dsv\n'}
+[21.223646] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.dsv\n'}
+[21.223678] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/ament_index/resource_index/packages/gazebo_grasp_plugin\n'}
+[21.223716] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[21.223750] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[21.223782] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[21.223813] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/gazebo_grasp_pluginConfig.cmake\n'}
+[21.223845] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake/gazebo_grasp_pluginConfig-version.cmake\n'}
+[21.223877] (gazebo_grasp_plugin) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/package.xml\n'}
+[21.224547] (gazebo_grasp_plugin) CommandEnded: {'returncode': 0}
+[21.235440] (gazebo_grasp_plugin) JobEnded: {'identifier': 'gazebo_grasp_plugin', 'rc': 0}
+[21.236166] (gazebo_grasp_plugin_ros) JobStarted: {'identifier': 'gazebo_grasp_plugin_ros'}
+[21.244460] (gazebo_grasp_plugin_ros) JobProgress: {'identifier': 'gazebo_grasp_plugin_ros', 'progress': 'cmake'}
+[21.244857] (gazebo_grasp_plugin_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/liang/me332_ws/src/gazebo-pkgs-humble/gazebo_grasp_plugin_ros', '-DCMAKE_INSTALL_PREFIX=/home/liang/me332_ws/install/gazebo_grasp_plugin_ros'], 'cwd': '/home/liang/me332_ws/build/gazebo_grasp_plugin_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'liang'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/liang/me332_ws/install/gazebo_grasp_plugin/lib:/home/liang/me332_ws/install/gazebo_version_helpers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/liang'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'liang'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'liang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/liang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubun:@/tmp/.ICE-unix/1735,unix/Ubun:/tmp/.ICE-unix/1735'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9ee5529_8ea4_4195_b6d4_e9fd5e5e3a85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.651'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/liang/me332_ws/build/gazebo_grasp_plugin_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/liang/.local/share/Trash/files/build.15/gazebo_grasp_plugin/libgazebo_grasp_fix.so\n/home/liang/.local/share/Trash/files/install.15/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble')]), 'shell': False}
+[21.257744] (-) TimerEvent: {}
+[21.288024] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[21.334277] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[21.340562] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[21.357789] (-) TimerEvent: {}
+[21.402592] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[21.407466] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[21.407638] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[21.407985] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[21.409922] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[21.457898] (-) TimerEvent: {}
+[21.478652] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[21.486379] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[21.486472] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[21.486640] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[21.488540] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[21.557972] (-) TimerEvent: {}
+[21.595327] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[21.658066] (-) TimerEvent: {}
+[21.660365] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[21.690620] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[21.694177] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[21.700030] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[21.709153] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[21.720156] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[21.751514] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[21.753412] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[21.758214] (-) TimerEvent: {}
+[21.826184] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[21.846804] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[21.858477] (-) TimerEvent: {}
+[21.877664] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[21.883647] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[21.938480] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[21.938692] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[21.958717] (-) TimerEvent: {}
+[21.999578] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[22.000809] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[22.036493] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)\n'}
+[22.041822] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[22.042605] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[22.053951] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[22.058789] (-) TimerEvent: {}
+[22.145158] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[22.158850] (-) TimerEvent: {}
+[22.191975] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[22.204080] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[22.226446] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[22.237549] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[22.242143] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[22.246573] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[22.247442] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[22.247613] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[22.252647] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[22.258925] (-) TimerEvent: {}
+[22.263964] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[22.294060] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[22.299553] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[22.306804] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[22.310511] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[22.310705] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[22.314097] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[22.314267] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[22.317311] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[22.317484] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[22.320818] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[22.320993] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[22.324417] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[22.324589] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[22.327856] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[22.359052] (-) TimerEvent: {}
+[22.399784] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[22.401286] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[22.401473] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[22.414876] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[22.422479] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[22.426849] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[22.439031] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[22.459127] (-) TimerEvent: {}
+[22.474127] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[22.480043] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[22.491132] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[22.521795] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[22.523622] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[22.523835] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[22.539199] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[22.543548] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[22.555238] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[22.559229] (-) TimerEvent: {}
+[22.585965] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[22.587511] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[22.587707] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[22.587942] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[22.588568] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[22.589559] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[22.601522] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[22.601817] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[22.603546] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[22.603650] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[22.604003] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[22.606249] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[22.606429] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[22.659434] (-) TimerEvent: {}
+[22.679548] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[22.687547] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[22.700028] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[22.730056] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[22.735047] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[22.746611] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[22.759616] (-) TimerEvent: {}
+[22.777302] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[22.777602] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[22.778124] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[22.778494] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[22.782276] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[22.782395] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[22.793651] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[22.825714] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[22.828790] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[22.859843] (-) TimerEvent: {}
+[22.863833] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Found gazebo_grasp_plugin: 1.0.2 (/home/liang/me332_ws/install/gazebo_grasp_plugin/share/gazebo_grasp_plugin/cmake)\n'}
+[22.920968] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Configuring done\n'}
+[22.933908] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Generating done\n'}
+[22.937718] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Build files have been written to: /home/liang/me332_ws/build/gazebo_grasp_plugin_ros\n'}
+[22.947516] (gazebo_grasp_plugin_ros) CommandEnded: {'returncode': 0}
+[22.948289] (gazebo_grasp_plugin_ros) JobProgress: {'identifier': 'gazebo_grasp_plugin_ros', 'progress': 'build'}
+[22.948862] (gazebo_grasp_plugin_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/liang/me332_ws/build/gazebo_grasp_plugin_ros', '--', '-j20', '-l20'], 'cwd': '/home/liang/me332_ws/build/gazebo_grasp_plugin_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'liang'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/liang/me332_ws/install/gazebo_grasp_plugin/lib:/home/liang/me332_ws/install/gazebo_version_helpers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/liang'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'liang'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'liang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/liang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubun:@/tmp/.ICE-unix/1735,unix/Ubun:/tmp/.ICE-unix/1735'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9ee5529_8ea4_4195_b6d4_e9fd5e5e3a85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.651'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/liang/me332_ws/build/gazebo_grasp_plugin_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/liang/.local/share/Trash/files/build.15/gazebo_grasp_plugin/libgazebo_grasp_fix.so\n/home/liang/.local/share/Trash/files/install.15/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble')]), 'shell': False}
+[22.959915] (-) TimerEvent: {}
+[22.993514] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/grasp_event_republisher.dir/src/grasp_event_republisher.cpp.o\x1b[0m\n'}
+[23.060146] (-) TimerEvent: {}
+[23.160553] (-) TimerEvent: {}
+[23.260878] (-) TimerEvent: {}
+[23.361166] (-) TimerEvent: {}
+[23.461577] (-) TimerEvent: {}
+[23.561901] (-) TimerEvent: {}
+[23.662224] (-) TimerEvent: {}
+[23.762574] (-) TimerEvent: {}
+[23.862915] (-) TimerEvent: {}
+[23.963216] (-) TimerEvent: {}
+[24.063501] (-) TimerEvent: {}
+[24.163770] (-) TimerEvent: {}
+[24.264000] (-) TimerEvent: {}
+[24.364267] (-) TimerEvent: {}
+[24.464534] (-) TimerEvent: {}
+[24.564789] (-) TimerEvent: {}
+[24.664992] (-) TimerEvent: {}
+[24.765198] (-) TimerEvent: {}
+[24.865459] (-) TimerEvent: {}
+[24.965718] (-) TimerEvent: {}
+[25.065954] (-) TimerEvent: {}
+[25.166208] (-) TimerEvent: {}
+[25.266470] (-) TimerEvent: {}
+[25.366739] (-) TimerEvent: {}
+[25.466972] (-) TimerEvent: {}
+[25.567239] (-) TimerEvent: {}
+[25.667458] (-) TimerEvent: {}
+[25.767703] (-) TimerEvent: {}
+[25.867924] (-) TimerEvent: {}
+[25.968182] (-) TimerEvent: {}
+[26.068417] (-) TimerEvent: {}
+[26.168718] (-) TimerEvent: {}
+[26.268939] (-) TimerEvent: {}
+[26.369142] (-) TimerEvent: {}
+[26.469338] (-) TimerEvent: {}
+[26.569559] (-) TimerEvent: {}
+[26.669800] (-) TimerEvent: {}
+[26.769998] (-) TimerEvent: {}
+[26.870243] (-) TimerEvent: {}
+[26.970518] (-) TimerEvent: {}
+[27.070788] (-) TimerEvent: {}
+[27.171160] (-) TimerEvent: {}
+[27.271429] (-) TimerEvent: {}
+[27.371779] (-) TimerEvent: {}
+[27.472003] (-) TimerEvent: {}
+[27.572278] (-) TimerEvent: {}
+[27.672619] (-) TimerEvent: {}
+[27.772867] (-) TimerEvent: {}
+[27.873091] (-) TimerEvent: {}
+[27.973345] (-) TimerEvent: {}
+[28.073570] (-) TimerEvent: {}
+[28.173864] (-) TimerEvent: {}
+[28.274104] (-) TimerEvent: {}
+[28.374381] (-) TimerEvent: {}
+[28.474726] (-) TimerEvent: {}
+[28.574948] (-) TimerEvent: {}
+[28.675205] (-) TimerEvent: {}
+[28.775534] (-) TimerEvent: {}
+[28.875868] (-) TimerEvent: {}
+[28.976125] (-) TimerEvent: {}
+[29.076364] (-) TimerEvent: {}
+[29.176584] (-) TimerEvent: {}
+[29.276877] (-) TimerEvent: {}
+[29.377133] (-) TimerEvent: {}
+[29.477349] (-) TimerEvent: {}
+[29.577596] (-) TimerEvent: {}
+[29.677986] (-) TimerEvent: {}
+[29.778252] (-) TimerEvent: {}
+[29.878564] (-) TimerEvent: {}
+[29.978863] (-) TimerEvent: {}
+[30.079082] (-) TimerEvent: {}
+[30.179337] (-) TimerEvent: {}
+[30.279710] (-) TimerEvent: {}
+[30.379927] (-) TimerEvent: {}
+[30.480137] (-) TimerEvent: {}
+[30.580385] (-) TimerEvent: {}
+[30.636093] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable grasp_event_republisher\x1b[0m\n'}
+[30.680508] (-) TimerEvent: {}
+[30.780730] (-) TimerEvent: {}
+[30.880960] (-) TimerEvent: {}
+[30.981230] (-) TimerEvent: {}
+[31.081506] (-) TimerEvent: {}
+[31.181796] (-) TimerEvent: {}
+[31.184906] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'[100%] Built target grasp_event_republisher\n'}
+[31.196315] (gazebo_grasp_plugin_ros) CommandEnded: {'returncode': 0}
+[31.197342] (gazebo_grasp_plugin_ros) JobProgress: {'identifier': 'gazebo_grasp_plugin_ros', 'progress': 'install'}
+[31.198941] (gazebo_grasp_plugin_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/liang/me332_ws/build/gazebo_grasp_plugin_ros'], 'cwd': '/home/liang/me332_ws/build/gazebo_grasp_plugin_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'liang'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/liang/me332_ws/install/gazebo_grasp_plugin/lib:/home/liang/me332_ws/install/gazebo_version_helpers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/liang'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'liang'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'liang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/liang/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Ubun:@/tmp/.ICE-unix/1735,unix/Ubun:/tmp/.ICE-unix/1735'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9ee5529_8ea4_4195_b6d4_e9fd5e5e3a85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.651'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/liang/me332_ws/build/gazebo_grasp_plugin_ros'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/liang/.local/share/Trash/files/build.15/gazebo_grasp_plugin/libgazebo_grasp_fix.so\n/home/liang/.local/share/Trash/files/install.15/gazebo_grasp_plugin/lib/libgazebo_grasp_fix.so'), ('CLUTTER_IM_MODULE', 'fcitx'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1193a65182b06f05ad881f22694c6382'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/liang/me332_ws/install/gazebo_grasp_plugin:/home/liang/me332_ws/install/gazebo_version_helpers:/opt/ros/humble')]), 'shell': False}
+[31.210026] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[31.210335] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/lib/gazebo_grasp_plugin_ros/grasp_event_republisher\n'}
+[31.212630] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/liang/me332_ws/install/gazebo_grasp_plugin_ros/lib/gazebo_grasp_plugin_ros/grasp_event_republisher" to ""\n'}
+[31.212993] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/ament_index/resource_index/package_run_dependencies/gazebo_grasp_plugin_ros\n'}
+[31.213155] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/ament_index/resource_index/parent_prefix_path/gazebo_grasp_plugin_ros\n'}
+[31.213309] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/environment/ament_prefix_path.sh\n'}
+[31.213438] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/environment/ament_prefix_path.dsv\n'}
+[31.213511] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/environment/path.sh\n'}
+[31.213630] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/environment/path.dsv\n'}
+[31.213715] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/local_setup.bash\n'}
+[31.213811] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/local_setup.sh\n'}
+[31.213876] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/local_setup.zsh\n'}
+[31.214114] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/local_setup.dsv\n'}
+[31.214217] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/package.dsv\n'}
+[31.214336] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/ament_index/resource_index/packages/gazebo_grasp_plugin_ros\n'}
+[31.214410] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/cmake/gazebo_grasp_plugin_rosConfig.cmake\n'}
+[31.214478] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/cmake/gazebo_grasp_plugin_rosConfig-version.cmake\n'}
+[31.214577] (gazebo_grasp_plugin_ros) StdoutLine: {'line': b'-- Installing: /home/liang/me332_ws/install/gazebo_grasp_plugin_ros/share/gazebo_grasp_plugin_ros/package.xml\n'}
+[31.216672] (gazebo_grasp_plugin_ros) CommandEnded: {'returncode': 0}
+[31.231378] (gazebo_grasp_plugin_ros) JobEnded: {'identifier': 'gazebo_grasp_plugin_ros', 'rc': 0}
+[31.231805] (-) EventReactorShutdown: {}
