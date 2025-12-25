@@ -1,41 +1,49 @@
-# 🚀 4WD Mobile Manipulator with SLAM & AI Interaction
+# ME332 Mobile Manipulator Control System (ROS2 Humble)
 
-这是一个集成了**四轮移动底座**与**多自由度机械臂**的复合机器人项目。该项目基于 ROS2 开发，旨在实现从自主导航到多模态交互（语音+手势）的全套功能。
+本项目是一个基于 **ROS2 Humble** 开发的复合机器人系统，包含四轮移动底座与机械臂。项目不仅实现了经典的导航建图，还深度集成了 Gazebo 物理仿真插件与基于语音/手势的多模态交互控制。
 
 
 
----
+## 🌟 项目亮点 (Highlights)
 
-## ✨ 核心功能 (Key Features)
+* **物理仿真优化**: 集成了 `gazebo_grasp_plugin`，解决了 Gazebo 仿真中机械臂抓取物体时容易滑落的物理难题。
+* **多模态遥控 (AI Teleop)**: 在 `me332_teleop` 中集成了离线语音模型（包含声学模型 `am` 和 语言模型 `graph`），支持复杂的语音指令解析。
+* **全栈导航能力**: 包含从机器人的 URDF 建模、传感器配置到 SLAM 建图及 Nav2 路径规划的全套流程。
 
-### 🗺️ 自主导航与建图
-* **SLAM 建图**: 支持多种算法（如 Gmapping, Cartographer 或 SLAM Toolbox），实现高精度环境建模。
-* **Nav2 导航**: 基于 ROS2 Navigation2 堆栈，实现路径规划、动态避障及精准定点移动。
+## 📂 仓库结构说明 (Repository Structure)
 
-### 🦾 机械臂作业
-* **协同控制**: 机械臂与底座坐标系解耦，支持 MoveIt2 运动规划，可完成抓取、放置等任务。
+项目主要由以下三个核心包组成：
 
-### 🧠 智能交互 (AI Interaction)
-* **语音控制**: 集成语音识别模块（如 Whisper 或 PocketSphinx），支持通过语音指令控制机器人移动与抓取。
-* **手势控制**: 基于 MediaPipe/OpenCV 的手势识别，实现通过手势实时引导机器人或切换模式。
-
----
+* **`me332_robot_description`**: 
+    * 包含机器人的 **URDF/Xacro** 物理模型。
+    * 内置 `worlds` 仿真环境与 `maps` 已构建好的地图。
+    * 提供完整的 `launch` 启动脚本，一键开启仿真环境。
+* **`me332_teleop`**:
+    * 核心控制逻辑所在。
+    * 集成了语音识别模型资源（AM, Graph, Phones），实现非接触式语音交互。
+    * 包含手势识别逻辑与移动/抓取控制脚本。
+* **`gazebo-pkgs-humble`**:
+    * 专为 ROS2 Humble 适配的 Gazebo 增强插件。
+    * `gazebo_grasp_plugin`: 提供更真实的物体抓取判定。
+    * `gazebo_version_helpers`: 解决不同 Gazebo 版本的兼容性问题。
 
 ## 🛠️ 技术栈 (Tech Stack)
 
-* **OS**: Ubuntu 22.04 + ROS2 (Humble/Foxy)
-* **Hardware**: 
-    * 底座: 4轮 (Mecanum/Differential) + 编码器电机
-    * 传感器: RPLIDAR, 深度相机 (RealSense/Kinect), 麦克风阵列
-    * 控制器: Jetson Nano / Raspberry Pi 4 / PC
-* **Languages**: Python, C++
+* **环境**: Ubuntu 22.04 + ROS2 Humble
+* **仿真器**: Gazebo Classic
+* **核心组件**: Nav2, SLAM Toolbox, MoveIt2 (可选), OpenCV/MediaPipe (手势)
+* **交互**: 离线语音识别 (Kaldi/Vosk based)
 
----
+## 🚀 快速开始 (Quick Start)
 
-## 📂 项目结构 (Repository Structure)
-
-* `/robot_description`: 机器人的 URDF/Xacro 模型文件。
-* `/robot_slam`: SLAM 配置文件及启动项。
-* `/robot_navigation`: Nav2 参数及地图文件。
-* `/robot_ai`: 语音识别与手势识别算法模块。
-* `/robot_arm`: 机械臂控制与 MoveIt 配置文件。
+1. **工作空间准备**:
+   ```bash
+   mkdir -p ~/me332_ws/src
+   cd ~/me332_ws/src
+   # 将本仓库克隆至此
+   colcon build --symlink-install
+   source install/setup.bash
+   
+2. **总控制台**:
+   cd ~/me332_ws
+   ./dashboard
