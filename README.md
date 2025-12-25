@@ -45,5 +45,6 @@
    source install/setup.bash
    
 2. **总控制台**:
+   ```bash
    cd ~/me332_ws
    ./dashboard
