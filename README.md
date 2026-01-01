@@ -9,6 +9,7 @@
 * **物理仿真优化**: 集成了 `gazebo_grasp_plugin`，解决了 Gazebo 仿真中机械臂抓取物体时容易滑落的物理难题。
 * **多模态遥控 (AI Teleop)**: 在 `me332_teleop` 中集成了离线语音模型（包含声学模型 `am` 和 语言模型 `graph`），支持复杂的语音指令解析。
 * **全栈导航能力**: 包含从机器人的 URDF 建模、传感器配置到 SLAM 建图及 Nav2 路径规划的全套流程。
+<img width="352" height="513" alt="image" src="https://github.com/user-attachments/assets/e73505a3-bc66-4b81-83f2-b74fe0610a22" />
 
 ## 📂 仓库结构说明 (Repository Structure)
 
